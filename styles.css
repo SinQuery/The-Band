@@ -1,1 +1,62 @@
- 
+/* Reference elements */
+:root{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --whiteBackG-primary-color: black;
+    --whiteBackG-sec-color: grey;
+    --blackBackG-primary-color: white;
+    --blackBackG-sec-color: grey;
+}
+
+/* General elements */
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+section
+{
+    width: 100%;
+    height: 100vh;
+}
+
+.homeSec, 
+.tourSec,
+.moreSec{
+    background-color: black;
+    color: var(--blackBackG-primary-color);
+}
+
+
+/* Navigation Area */
+nav {
+    background-color: grey;
+}
+
+nav ul{
+    display: inline flex;
+    list-style: none;
+    padding: 0;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+
+}
+
+h1{
+    margin: 0;
+    text-align: center;
+}
+
+
+/* Home Page Area */
+
+/* Band Area */
+
+/* Tour Area */
+
+/* Contact Area */
+
+/* More Area */
+
