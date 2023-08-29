@@ -30,6 +30,8 @@ section
 /* Navigation Area */
 nav {
     background-color: grey;
+    position: sticky;
+    top: 0;
 }
 
 nav ul{
