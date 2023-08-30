@@ -47,12 +47,17 @@ section
     background-color: black;
     color: var(--blackBackG-primary-color);
     position: relative;
-    z-index: -1;
+    z-index: 0;
+    /* For tourSec only */
+    display: flex; 
+    justify-content: center;
 }
 
 .bandSec,
 .contactSec{
     position: relative;
+    display: flex; 
+    justify-content: center;
 }
 
 
@@ -61,6 +66,7 @@ nav {
     background-color: grey;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 nav ul{
@@ -84,7 +90,7 @@ nav ul li a{
 }
 
 .homeDiv h1,
-p{
+.homeDiv p{
     /* margin: 0; */
     text-align: center;
 }
@@ -92,23 +98,39 @@ p{
 /* Band Area */
 .headingDiv{
     position: absolute;
-    padding: 0 22vw;
-    top: 100px;
-    left: 0;
-    right: 0;
+    /* padding: 0 22vw; */
+    top: 40px;
+    background-color: beige;
+    width: 60vw;
+    /* No longer necessary since I centered my div
+    using the justify-content + display prop in parent class */
+    /* left: 0;
+    right: 0; */ 
 }
 
 .headingDiv h1,
 .headingDiv p{
+    padding: 0 5vw;
     text-align: center;
 }
-.headingDiv p{
-    
-}
+
 
 /* Tour Area */
+.tourDiv{
+    color: black;
+    position: absolute;
+    align-items: center;
+    background-color: beige;
+    border: 1px blue;
+    width: 60vw;
+    margin: 2rem 0 0 0 ;
+    
 
+}
 
+.tourDiv h1{
+    text-align: center;
+}
 /* Contact Area */
 
 /* More Area */
