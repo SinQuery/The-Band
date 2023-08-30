@@ -1,15 +1,37 @@
 /* Reference elements */
 :root{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: 400;
     --whiteBackG-primary-color: black;
     --whiteBackG-sec-color: grey;
     --blackBackG-primary-color: white;
     --blackBackG-sec-color: grey;
 }
+body{
+    font-family: 'Lato', sans-serif;
+}
 
 /* General elements */
+h1, h2, h3, h4{
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+}
+
+p,
+.subHeadinagP{
+    font-family: inherit;
+    letter-spacing: 0.1vw;
+    /* font-weight: 400;  */
+}
+.subHeadingP{
+    color: var(--whiteBackG-sec-color);
+    font-style: italic;
+    
+}
+
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
 }
 
@@ -24,6 +46,13 @@ section
 .moreSec{
     background-color: black;
     color: var(--blackBackG-primary-color);
+    position: relative;
+    z-index: -1;
+}
+
+.bandSec,
+.contactSec{
+    position: relative;
 }
 
 
@@ -46,17 +75,39 @@ nav ul li a{
 
 }
 
-h1{
-    margin: 0;
+/* Home Page Area */
+.homeDiv{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.homeDiv h1,
+p{
+    /* margin: 0; */
     text-align: center;
 }
 
-
-/* Home Page Area */
-
 /* Band Area */
+.headingDiv{
+    position: absolute;
+    padding: 0 22vw;
+    top: 100px;
+    left: 0;
+    right: 0;
+}
+
+.headingDiv h1,
+.headingDiv p{
+    text-align: center;
+}
+.headingDiv p{
+    
+}
 
 /* Tour Area */
+
 
 /* Contact Area */
 
