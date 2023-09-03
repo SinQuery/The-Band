@@ -1,14 +1,16 @@
 /* Reference elements */
 :root{
     font-family: 'Segoe UI', Arial, sans-serif;
+    --font-family-2: 'Lato', sans-serif;
     font-weight: 400;
     --whiteBackG-primary-color: black;
     --whiteBackG-sec-color: grey;
     --blackBackG-primary-color: white;
     --blackBackG-sec-color: grey;
+
 }
 body{
-    font-family: 'Lato', sans-serif;
+    
 }
 
 /* General elements */
@@ -20,8 +22,9 @@ h1, h2, h3, h4{
 }
 
 p,
-.subHeadinagP{
-    font-family: inherit;
+.subHeadingP{
+    /* font-family: inherit; */
+    font-family: var(--font-family-2);
     letter-spacing: 0.1vw;
     /* font-weight: 400;  */
 }
@@ -117,21 +120,65 @@ nav ul li a{
 
 /* Tour Area */
 .tourDiv{
-    color: black;
+    /* color: black; */
+    color: var(--blackBackG-primary-color);
     position: absolute;
     align-items: center;
-    background-color: beige;
+    /* background-color: beige; */
     border: 1px blue;
-    width: 60vw;
+    width: 55vw;
     margin: 2rem 0 0 0 ;
     
 
 }
 
-.tourDiv h1{
+.tourDiv h1,
+.tourDiv p{
     text-align: center;
 }
+
+.tourDiv p{
+
+}
+
+table {
+    color: var(--blackBackG-sec-color);
+    border-color: green;
+    border-style: dotted;
+    border-block-color: grey;
+    border-block-style: dotted; 
+    background: white;
+    margin: 5vh 0;
+    
+}
+
+table td{
+    border-style: none;
+    border-bottom-style: solid;
+    padding: 10px; 
+}
+tbody{
+    padding: 20px;
+    margin: 20px;
+}
+
+table span{
+    color: white;
+    background: red;
+    padding: 2px;
+}
 /* Contact Area */
+.contactDiv{
+        /* color: black; */
+        color: var(--whiteBackG-primary-color);
+        position: absolute;
+        /* align-items: center; */
+        text-align: center;
+        /* background-color: beige; */
+        border: 1px blue;
+        width: 55vw;
+        margin: 2rem 0 0 0 ;
+}
 
 /* More Area */
 
